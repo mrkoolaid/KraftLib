@@ -1,0 +1,4 @@
+# KraftLib
+Helper libraries
+
+# mrkoolaid
