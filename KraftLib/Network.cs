@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.DirectoryServices;
+using System.IO;
 using System.Net;
+using System.Text;
 
 namespace KraftLib
 {
@@ -76,6 +78,27 @@ namespace KraftLib
         {
             download_progress = (int)e.TotalBytesToReceive / 100;
             download_perc_finished = (int)e.BytesReceived / 100;
+        }
+
+        /// <summary>
+        /// sends an HTTP POST request to a specified url
+        /// </summary>
+        /// <param name="url">the url to send the post data</param>
+        /// <param name="data">the data to send</param>
+        /// <author>mrkoolaid</author>
+        public void sendPostData(string url, string data)
+        {
+            WebRequest req = WebRequest.Create(url);
+
+            req.Method = "POST";
+            req.ContentType = "application/x-www-form-urlencoded";
+
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+            req.ContentLength = bytes.Length;
+
+            Stream dataStream = req.GetRequestStream();
+            dataStream.Write(bytes, 0, bytes.Length);
+            dataStream.Close();
         }
     }
 }
