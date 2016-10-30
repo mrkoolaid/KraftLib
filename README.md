@@ -1,21 +1,19 @@
 # KraftLib
-Hacker Helper Library
+Hacker Helper Library for .NET
 
-contributors: mrkoolaid, pukeslut
-
-This is the first release from our new team kraft. I hope we can bring some new things to the table here. all of 
-
-the code is open source through github.
-
-Converters
+#Converters
 - byte array to string
 - string to byte array
 - windows safe filename from string
 
-Network
+#Network
 - get names of networked computers
 - download a file to desktop (async)
+- HTTP POST
 
-Encryption
+#Encryption
 
-Generators
+#Generators
+
+#contributors
+mrkoolaid, pukeslut
