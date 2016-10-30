@@ -12,5 +12,9 @@ Converters
 - string to byte array
 - windows safe filename from string
 
+Network
+- get names of networked computers
+
 Encryption
+
 Generators

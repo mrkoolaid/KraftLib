@@ -15,6 +15,7 @@ namespace KraftLibDemo
     {
         public Converters c = new Converters();
         public Generators g = new Generators();
+        public Network n = new Network();
 
         public Form1()
         {
@@ -29,13 +30,18 @@ namespace KraftLibDemo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(g.safeWinName("MO<*TN^GTq#$%:>?ew?ew||@#_.eASD tgerh4"));
+            MessageBox.Show(c.safeWinName("MO<*TN^GTq#$%:>?ew?ew||@#_.eASD tgerh4"));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             byte[] nbytes = c.GetBytesFromStr("hello");
             MessageBox.Show(c.GetStrFromBytes(nbytes));
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            List<string> networked = n.getNetworkNames();
         }
     }
 }
