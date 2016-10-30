@@ -14,6 +14,7 @@ Converters
 
 Network
 - get names of networked computers
+- download a file to desktop (async)
 
 Encryption
 
