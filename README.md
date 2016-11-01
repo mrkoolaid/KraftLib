@@ -12,8 +12,11 @@ Hacker Helper Library for .NET
 - HTTP POST
 
 #Encryption
+- added aes encryption from mrmutt
+- added aes encrypt/decrypt from c0deh4ck
 
 #Generators
+- added random string method from codeh4ck
 
 #contributors
 mrkoolaid, pukeslut
