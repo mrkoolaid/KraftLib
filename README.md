@@ -1,22 +1,25 @@
 # KraftLib
-Hacker Helper Library for .NET
+Hacker friendly helper ibrary for .NET featuring methods from various authors for crypters, keyloggers and other malware.
 
 #Converters
-- byte array to string
-- string to byte array
-- windows safe filename from string
+- Byte array to string
+- String to byte array
+- Windows safe filename from string
 
 #Network
-- get names of networked computers
-- download a file to desktop (async)
+- Get names of networked computers
+- Download a file to desktop (async)
 - HTTP POST
 
 #Encryption
-- added aes encryption from mrmutt
-- added aes encrypt/decrypt from c0deh4ck
+- Added AES encryption from mrmutt
+- Added AES encrypt/decrypt from c0deh4ck
 
 #Generators
-- added random string method from codeh4ck
+- Added random string method from codeh4ck
+
+#Browsers
+- Added Chrome cookie thief
 
 #contributors
 mrkoolaid, pukeslut
